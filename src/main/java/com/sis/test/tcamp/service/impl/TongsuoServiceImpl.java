@@ -7,6 +7,7 @@ import com.sis.test.tcamp.common.ResultEnum;
 import com.sis.test.tcamp.service.TongsuoService;
 import com.sis.test.tcamp.utils.ShellUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.util.Collections;
@@ -14,6 +15,7 @@ import java.util.List;
 
 
 @Slf4j
+@Service
 public class TongsuoServiceImpl implements TongsuoService {
 
     //sm4加密
