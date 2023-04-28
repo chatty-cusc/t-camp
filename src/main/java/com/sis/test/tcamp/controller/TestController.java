@@ -14,6 +14,12 @@ public class TestController {
 
     @GetMapping(value = "/test")
     public List<String> test(){
-        return ShellUtils.executeNewFlow(Collections.singletonList("echo -n \"hello tongsuo\" | /lib/bin/tongsuo dgst -sm3"));
+        return ShellUtils.executeNewFlow(Collections.singletonList("echo -n \"hello tongsuo\" | lib/bin/tongsuo dgst -sm3"));
+    }
+
+
+    @GetMapping(value = "/test2")
+    public List<String> test2(){
+        return ShellUtils.executeNewFlow(Collections.singletonList("echo -n \"hello tongsuo\" | /opt/tongsuo/bin/tongsuo dgst -sm3"));
     }
 }
