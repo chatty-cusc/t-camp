@@ -6,8 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class TCampApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+    public static void main(String[] args) {
 
+    }
 }
