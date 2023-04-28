@@ -7,6 +7,7 @@ import com.sis.test.tcamp.common.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
@@ -46,12 +47,12 @@ public class TestController {
     }
 
     @PostMapping(value = "/sm2Verify")
-    public Result sm2Verify(@RequestBody CommonImportDto body) {
+    public Result sm2Verify(@RequestBody CommonImportDto body) throws IOException {
         return tongsuoService.sm2Verify(body);
     }
 
     @PostMapping(value = "/sm2Sign")
-    public Result sm2Sign(@RequestBody CommonImportDto body) {
+    public Result sm2Sign(@RequestBody CommonImportDto body) throws IOException {
         return tongsuoService.sm2Sign(body);
     }
 
