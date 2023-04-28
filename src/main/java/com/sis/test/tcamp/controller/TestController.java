@@ -18,7 +18,7 @@ public class TestController {
     public List<String> test() throws IOException {
         File directory = new File("src/main/resources");
         String reportPath = directory.getCanonicalPath();
-        String resource =reportPath + "/lib/bin/tongsuo";
+        String resource =reportPath + "/tongsuo/bin/tongsuo";
         System.out.println(resource);
         return ShellUtils.executeNewFlow(Collections.singletonList("echo -n \"hello tongsuo\" | "+resource+" dgst -sm3"));
     }
@@ -34,7 +34,7 @@ public class TestController {
     public List<String> test3() throws IOException {
         File directory = new File("src/main/resources");
         String reportPath = directory.getCanonicalPath();
-        String resource =reportPath + "/lib/bin/tongsuo";
+        String resource =reportPath + "/tongsuo/bin/tongsuo";
         System.out.println(resource);
         return ShellUtils.executeNewFlow(Collections.singletonList("echo -n \"hello tongsuo\" | /src/main/resources/lib/bin/tongsuo dgst -sm3"));
     }
