@@ -2,7 +2,13 @@ package com.sis.test.tcamp.api;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
+import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author chatty
+ * @create 2023-04-28 15:53
+ */
+@Slf4j
 public class SoUtil {
 
     /**
