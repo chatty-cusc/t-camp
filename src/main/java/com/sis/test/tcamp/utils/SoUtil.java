@@ -1,4 +1,4 @@
-package com.sis.test.tcamp.api;
+package com.sis.test.tcamp.utils;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
