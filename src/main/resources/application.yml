@@ -9,9 +9,9 @@ spring:
   application:
     name: t-camp
   datasource:
-    url: jdbc:mysql://47.101.215.245:3306/sis_rbac?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2b8
-    username: root
-    password: Chendian@123
+    url: jdbc:mysql://127.0.0.1:3306/tongsuo?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2b8
+    username: tongsuo
+    password: tongsuo@123
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       initial-size: 5
